@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Output</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <h1>Chatroom Versuch</h1>
+    <div id="nachrichten-container"></div>
+        <form id="form">
+            <label for="message-input">Nachricht</label>
+            <input type="text" id="message-input" placeholder="gib die nachricht hier ein">
+            <button type="submit" id="send-btn">Senden</button>
+
+            <label for="room-input">Raum</label>
+            <input type="text" id="room-input" placeholder="die raumnummer hier">
+            <button type="button" id="room-button">Beitreten</button>
+        </form>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="script.js" type="module"></script> 
+</body>
+</html>
